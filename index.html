@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookNest - Rent Books</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">BookNest</div>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Browse</a></li>
+        <li><a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+
+      </ul>
+    </nav>
+    <div class="menu-btn" id="menu-btn">&#9776;</div>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="close-btn" id="close-btn">&times;</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Browse</a></li>
+        <li><a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-title">
+      <h2>Available Books</h2>
+    </section>
+
+    <section class="book-list">
+      
+      <div class="book">
+        <a href="1984.html">
+          <img src="book-1984.jpg">
+        </a>
+        <h4>1984</h4>
+        <p>by Author 1</p>
+        <p>$1.50 / day</p>
+        <button data-title="1984" data-price="1.50">Rent</button>
+      </div>
+      <div class="book">
+        <a href="second.html">
+          <img src="book-hobbit.jpg">
+        </a>
+        <h4>The Hobbit</h4>
+        <p>by Author 2</p>
+        <p>$2.00 / day</p>
+        <button data-title="The Hobbit" data-price="2.00">Rent</button>
+      </div>
+      <div class="book">
+        <a href="third.html">
+          <img src="book-mockingbird.jpg">
+        </a>
+        <h4>To Kill a book-mockingbird</h4>
+        <p>by Author 3</p>
+        <p>$2.50 / day</p>
+        <button data-title="To Kill a book-mockingbird" data-price="2.50">Rent</button>
+      </div>
+      <div class="book">
+        <a href="forth.html">
+          <img src="book-pride.jpg">
+        </a>
+        <h4>Pride and Prejudice</h4>
+        <p>by Author 4</p>
+        <p>$3.00 / day</p>
+        <button data-title="Pride and Prejudice" data-price="3.00">Rent</button>
+      </div>
+      <div class="book">
+        <a href="fifth.html">
+          <img src="book-mobydick.jpg">
+        </a>
+        <h4>Mody-Dick</h4>
+        <p>by Author 5</p>
+        <p>$1.00 / day</p>
+        <button data-title="Mody-Dick" data-price="1.00">Rent</button>
+      </div>
+      <div class="book">
+        <a href="sixth.html">
+          <img src="book-warpeace.jpg">
+        </a>
+        <h4>War and Peace</h4>
+        <p>by Author 6</p>
+        <p>$1.50 / day</p>
+        <button data-title="War and Peace" data-price="1.50">Rent</button>
+      </div>
+      <div class="book">
+        <a href="seventh.html">
+          <img src="book-gatsby.jpg">
+        </a>
+        <h4>The Great Gatsby</h4>
+        <p>by Author 7</p>
+        <p>$2.00 / day</p>
+        <button data-title="The Great Gatsby" data-price="2.00">Rent</button>
+      </div>
+      <div class="book">
+        <a href="eights.html">
+          <img src="book-catcher.jpg">
+        </a>
+        <h4>The Catcher in the Rye</h4>
+        <p>by Author 8</p>
+        <p>$2.50 / day</p>
+        <button data-title="The Catcher in the Rye" data-price="2.50">Rent</button>
+      </div>
+    </section>
+
+    <section class="cart-panel" id="cart-panel">
+      <h2>Your Rental Cart</h2>
+      <ul id="cart-list"></ul>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
